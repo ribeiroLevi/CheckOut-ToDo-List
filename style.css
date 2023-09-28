@@ -1,0 +1,126 @@
+@import url('https://fonts.cdnfonts.com/css/accidental-presidency');
+:root {
+  --deep-purple: #352f44;
+  --pale-purple: #b9b4c7;
+  --pale-white: #faf0e6;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Accidental Presidency', sans-serif;
+  color: var(--pale-white);
+  background-color: var(--deep-purple);
+  height: 100%;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 97%;
+  margin-top: 10px;
+}
+nav div {
+  display: flex;
+  align-items: flex-end;
+}
+nav a {
+  text-decoration: none;
+  color: var(--pale-white);
+  font-size: 30px;
+  margin-left: 15px;
+}
+nav button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+}
+section h1 {
+  display: flex;
+  align-items: center;
+  font-size: 60px;
+}
+section h1 img {
+  width: 40px;
+  margin-left: -5px;
+}
+section div {
+  width: 900px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+section div input {
+  width: 78%;
+  height: 100%;
+  border-radius: 10px;
+  border: none;
+  text-indent: 20px;
+}
+section div input:focus {
+  outline: none;
+}
+section div input::placeholder {
+  font-family: 'Accidental Presidency', sans-serif;
+  color: var(--pale-purple);
+  font-size: 30px;
+}
+section div button {
+  border: none;
+  border-radius: 10px;
+  width: 20%;
+  height: 105%;
+  float: right;
+  background-color: var(--pale-purple);
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  width: 700px;
+  padding: 0;
+}
+li {
+  width: 50px;
+  color: var(--deep-purple);
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 10px;
+  width: 100%;
+  padding: 20px 0px;
+  background-color: var(--pale-purple);
+  margin-bottom: 20px;
+}
+
+.close {
+  cursor: pointer;
+  background: none;
+  border: none;
+  display: flex;
+  align-self: flex-end;
+}
+
+li.checked {
+  text-decoration: line-through;
+  opacity: 1;
+  background: url(assets/check.svg);
+  background-position: 5% 50%;
+  background-size: 20px;
+  opacity: 0.7;
+  background-color: var(--pale-purple);
+  background-repeat: no-repeat;
+}
