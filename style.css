@@ -108,6 +108,7 @@ li {
   background-color: var(--pale-purple);
   margin-bottom: 20px;
   transition: all 0.15s ease-in-out;
+  position: relative;
 }
 li:hover{
   padding: 25px 0px;
@@ -119,6 +120,11 @@ li:hover{
   border: none;
   display: flex;
   align-self: flex-end;
+  position: absolute;
+  right: 20px;
+}
+.close span{
+  float: right;
 }
 
 li.checked {
