@@ -65,9 +65,13 @@ section div input {
   border-radius: 10px;
   border: none;
   text-indent: 20px;
+  font-family: 'Accidental Presidency', sans-serif;
+  font-size: 25px;
+  color: var(--deep-purple);
+  transition: all 0.15 ease-in;
 }
 section div input:focus {
-  outline: none;
+  outline:3px solid var(--pale-purple) ;
 }
 section div input::placeholder {
   font-family: 'Accidental Presidency', sans-serif;
@@ -92,7 +96,6 @@ ul {
   padding: 0;
 }
 li {
-  width: 50px;
   color: var(--deep-purple);
   font-size: 25px;
   display: flex;
@@ -104,6 +107,10 @@ li {
   padding: 20px 0px;
   background-color: var(--pale-purple);
   margin-bottom: 20px;
+  transition: all 0.15s ease-in-out;
+}
+li:hover{
+  padding: 25px 0px;
 }
 
 .close {
