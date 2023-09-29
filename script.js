@@ -87,6 +87,7 @@ let logo = document.querySelector('#logo');
 let bd = document.body;
 let seta = document.querySelector('.setaBtn');
 let setaLogo = document.querySelector('.setaLogo');
+
 btnTheme.addEventListener('click', function () {
   if (change == false) {
     bd.style.setProperty('--pale-white', '#352f44');
