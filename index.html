@@ -9,18 +9,21 @@
   </head>
   <body>
     <nav>
-      <img src="assets/logo.svg" alt="" />
+      <img src="assets/logo.svg" alt="" id="logo" />
       <div>
-        <button id="sun"><img src="assets/sol.svg" alt="" /></button>
+        <button><img src="assets/sol.svg" alt="" id="sun" /></button>
         <a href="about.html">About</a>
       </div>
     </nav>
     <section>
-      <h1>Plan it. Do it. CheckOut! <img src="assets/seta.svg" alt="" /></h1>
+      <h1>
+        Plan it. Do it. CheckOut!
+        <img src="assets/seta.svg" alt="" class="setaLogo" />
+      </h1>
       <div>
         <input placeholder="Plans for today?" type="text" id="myInput" />
         <button onclick="newElement()" id="btn">
-          <img src="assets/seta_alternativa.svg" alt="" />
+          <img src="assets/seta_alternativa.svg" alt="" class="setaBtn" />
         </button>
       </div>
 
@@ -29,6 +32,5 @@
       </ul>
     </section>
   </body>
-
   <script src="script.js"></script>
 </html>

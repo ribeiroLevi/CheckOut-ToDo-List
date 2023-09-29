@@ -55,9 +55,10 @@ function deleteElements() {
   for (let i = 0; i < myNodelist.length; i++) {
     //cria uma span e uma img em cada um dos elementos em "myNodeList"
     var span = document.createElement('SPAN');
-    var img = document.createElement('img');
+    let img = document.createElement('img');
     //da o local da img
     img.src = 'assets/lixo.svg';
+    img.id = 'trash';
     //da o nome
     span.className = 'close';
     //coloca os respectivos elementos no html
@@ -76,3 +77,39 @@ function deleteElements() {
     };
   }
 }
+
+//TOGGLE THEMES
+let trash = document.querySelector('#trash');
+//let check = document.querySelector('.checked');
+let change = false;
+let btnTheme = document.querySelector('#sun');
+let logo = document.querySelector('#logo');
+let bd = document.body;
+let seta = document.querySelector('.setaBtn');
+let setaLogo = document.querySelector('.setaLogo');
+btnTheme.addEventListener('click', function () {
+  if (change == false) {
+    bd.style.setProperty('--pale-white', '#352f44');
+    bd.style.setProperty('--deep-purple', '#faf0e6');
+    logo.src = 'assets/logo_black.svg';
+    btnTheme.src = 'assets/moon.svg';
+    btnTheme.style.marginTop = '5px';
+    trash.src = 'assets/lixo_light.svg';
+    seta.src = 'assets/seta_light.svg';
+    setaLogo.src = 'assets/seta_alternativa.svg';
+    setaLogo.style.width = '20px';
+    setaLogo.style.marginLeft = '10px';
+    //check.style.backgroundImage = 'url(assets/check_light.svg)';
+    change = true;
+  } else {
+    bd.style.setProperty('--pale-white', '#faf0e6');
+    bd.style.setProperty('--deep-purple', '#352f44');
+    logo.src = 'assets/logo.svg';
+    btnTheme.src = 'assets/sol.svg';
+    btnTheme.style.marginTop = '0';
+    trash.src = 'assets/lixo.svg';
+    seta.src = 'assets/seta_alternativa.svg';
+    setaLogo.src = 'assets/seta_light.svg';
+    change = false;
+  }
+});
