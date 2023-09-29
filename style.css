@@ -5,7 +5,8 @@
   --pale-white: #faf0e6;
 }
 
-body {
+body,
+html {
   margin: 0;
   padding: 0;
   font-family: 'Accidental Presidency', sans-serif;
@@ -23,7 +24,7 @@ nav {
 }
 nav div {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
 }
 nav a {
   text-decoration: none;
@@ -32,6 +33,8 @@ nav a {
   margin-left: 15px;
 }
 nav button {
+  display: flex;
+  justify-self: center;
   background: none;
   border: none;
   cursor: pointer;
@@ -71,7 +74,7 @@ section div input {
   transition: all 0.15 ease-in;
 }
 section div input:focus {
-  outline:3px solid var(--pale-purple) ;
+  outline: 3px solid var(--pale-purple);
 }
 section div input::placeholder {
   font-family: 'Accidental Presidency', sans-serif;
@@ -86,6 +89,14 @@ section div button {
   float: right;
   background-color: var(--pale-purple);
   cursor: pointer;
+  transition: all 0.15s;
+}
+
+section div button:hover {
+  padding-left: 30px;
+}
+section div button:active {
+  opacity: 0.8;
 }
 
 ul {
@@ -108,8 +119,9 @@ li {
   background-color: var(--pale-purple);
   margin-bottom: 20px;
   transition: all 0.15s ease-in-out;
+  position: relative;
 }
-li:hover{
+li:hover {
   padding: 25px 0px;
 }
 
@@ -119,6 +131,11 @@ li:hover{
   border: none;
   display: flex;
   align-self: flex-end;
+  position: absolute;
+  right: 20px;
+}
+.close span {
+  float: right;
 }
 
 li.checked {
@@ -130,4 +147,27 @@ li.checked {
   opacity: 0.7;
   background-color: var(--pale-purple);
   background-repeat: no-repeat;
+}
+
+#centro {
+  height: 85%;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#centro h1 {
+  margin: 0;
+  font-size: 60px;
+}
+#centro h1 img {
+  width: 40px;
+  margin-left: -15px;
+}
+#centro p {
+  margin: 0;
+  font-size: 40px;
+}
+#centro a {
+  margin-top: 30px;
 }
