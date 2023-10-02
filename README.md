@@ -35,6 +35,8 @@ Além da parte de codificação, aprendi um pouco sobre organização e document
 #### Light Mode
 ![Screenshot_3](https://github.com/ribeiroLevi/CheckOut-ToDo-List/assets/126264441/8bb2ac4b-33cf-4f42-b4bc-3f28803b3e22)
 
+### Licença
+ - [MIT License](https://github.com/ribeiroLevi/CheckOut-ToDo-List/blob/main/LICENSE.md)
 
 ## Referência
 
