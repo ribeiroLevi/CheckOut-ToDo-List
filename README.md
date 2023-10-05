@@ -25,7 +25,7 @@ A ideia inicial veio em dark mode e acabei por escolher essas cores. Mais adiant
 
 De maneira geral, o maior aprendizado que obtive nesse projeto foi a capacidade de desenvolver códigos mais complexos em JavaScript.
 Como melhor utilizar o DOM, manipulação de loops e variáveis e construção de funções.
-Além da parte de codificação, aprendi um pouco sobre organização e documenta de projeto, bem como da parte de criação já que tive que buscar referências e construir um protótipo antes de codificar.
+Além da parte de codificação, aprendi um pouco sobre organização e documentação de projeto, bem como da parte de criação já que tive que buscar referências e construir um protótipo antes de codificar.
 
 ## Screenshots
 
