@@ -1,7 +1,7 @@
-addEventListener(onload, deleteElements());
+addEventListener(onload, deleteElements(), editElements());
+
 //fecha elementos
 let close = document.querySelectorAll('.close');
-
 for (let i = 0; i < close.length; i++) {
   close[i].onclick = function () {
     var div = this.parentElement;
@@ -38,12 +38,12 @@ function newElement() {
   let inputValue = document.querySelector('#myInput').value;
   let valor = document.createTextNode(inputValue);
   li.appendChild(valor);
-
   if (inputValue === '') {
     alert('You must write something');
   } else {
     document.querySelector('#myUl').appendChild(li);
     deleteElements();
+    editElements();
   }
   document.querySelector('#myInput');
 }
@@ -54,7 +54,7 @@ function deleteElements() {
   let myNodelist = document.getElementsByTagName('LI');
   for (let i = 0; i < myNodelist.length; i++) {
     //cria uma span e uma img em cada um dos elementos em "myNodeList"
-    var span = document.createElement('SPAN');
+    let span = document.createElement('SPAN');
     let img = document.createElement('img');
     //da o local da img
     img.src = 'assets/lixo.svg';
@@ -65,15 +65,40 @@ function deleteElements() {
     span.appendChild(img);
     myNodelist[i].appendChild(span);
   }
-
   document.getElementById('myInput').value = '';
   //fecha elementos
   let close = document.querySelectorAll('.close');
-
   for (let i = 0; i < close.length; i++) {
     close[i].onclick = function () {
       var div = this.parentElement;
       div.style.display = 'none';
+    };
+  }
+}
+
+function editElements() {
+  let myEditList = document.getElementsByTagName('LI');
+  for (let i = 0; i < myEditList.length; i++) {
+    let span = document.createElement('span');
+    let img = document.createElement('img');
+
+    img.src = 'assets/edit_dark.svg';
+    img.id = 'edit';
+
+    span.className = 'edit';
+
+    span.appendChild(img);
+    myEditList[i].appendChild(span);
+  }
+
+  let edit = document.querySelectorAll('.edit');
+  for (let i = 0; i < edit.length; i++) {
+    edit[i].onclick = () => {
+      console.log('APERTADO');
+      let newText = prompt("What's the new activity?");
+      let li = document.querySelectorAll('li');
+      li[i].textContent = newText;
+      deleteElements();
     };
   }
 }
