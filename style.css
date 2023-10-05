@@ -132,10 +132,15 @@ li:hover {
   position: absolute;
   right: 20px;
 }
-.close span {
-  float: right;
+.edit {
+  cursor: pointer;
+  background: none;
+  border: none;
+  display: flex;
+  align-self: flex-end;
+  position: absolute;
+  right: 60px;
 }
-
 li.checked {
   text-decoration: line-through;
   opacity: 1;
