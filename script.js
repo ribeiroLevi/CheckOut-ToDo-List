@@ -89,19 +89,20 @@ function editElements() {
 
     span.appendChild(img);
     myEditList[i].appendChild(span);
-  }
 
-  let edit = document.querySelectorAll('.edit');
-  for (let i = 0; i < edit.length; i++) {
-    edit[i].onclick = () => {
+    span.onclick = function () {
       console.log('APERTADO');
       let newText = prompt("What's the new activity?");
-      let li = document.querySelectorAll('li');
-      li[i].textContent = newText;
-      deleteElements();
+      if (newText !== null) {
+        myEditList[i].textContent = newText;
+        deleteElements();
+        editElements();
+      }
     };
   }
 }
+
+// Chame a função editElements quando necessário.
 
 //TOGGLE THEMES
 let trash = document.querySelector('#trash');
