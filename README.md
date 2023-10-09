@@ -10,7 +10,7 @@ Aplicação minimalista de lista de afazeres para pessoas que não querem um mil
 - Check de tasks
 - Temas dark e light
 - Multiplataforma (Em construção)
-- Edição de tasks (Em construção)
+- Edição de tasks
 
 ## Documentação de cores
 A ideia inicial veio em dark mode e acabei por escolher essas cores. Mais adiante no projeto também desenvolvi o light mode, contudo, são as mesmas cores - apenas invertidas.
