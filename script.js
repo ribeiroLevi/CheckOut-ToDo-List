@@ -91,7 +91,6 @@ function editElements() {
     myEditList[i].appendChild(span);
 
     span.onclick = function () {
-      console.log('APERTADO');
       let newText = prompt("What's the new activity?");
       if (newText !== null) {
         myEditList[i].textContent = newText;
@@ -106,13 +105,13 @@ function editElements() {
 
 //TOGGLE THEMES
 let trash = document.querySelector('#trash');
-//let check = document.querySelector('.checked');
 let change = false;
 let btnTheme = document.querySelector('#sun');
 let logo = document.querySelector('#logo');
 let bd = document.body;
 let seta = document.querySelector('.setaBtn');
 let setaLogo = document.querySelector('.setaLogo');
+let edit = document.querySelector('#edit');
 
 btnTheme.addEventListener('click', function () {
   if (change == false) {
@@ -126,7 +125,7 @@ btnTheme.addEventListener('click', function () {
     setaLogo.src = 'assets/seta_alternativa.svg';
     setaLogo.style.width = '20px';
     setaLogo.style.marginLeft = '10px';
-    //check.style.backgroundImage = 'url(assets/check_light.svg)';
+    edit.src = 'assets/edit_light.svg';
     change = true;
   } else {
     bd.style.setProperty('--pale-white', '#faf0e6');
@@ -137,6 +136,8 @@ btnTheme.addEventListener('click', function () {
     trash.src = 'assets/lixo.svg';
     seta.src = 'assets/seta_alternativa.svg';
     setaLogo.src = 'assets/seta_light.svg';
+    edit.src = 'assets/edit_dark.svg';
+
     change = false;
   }
 });
