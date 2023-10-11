@@ -175,3 +175,16 @@ li.checked {
 #centro a {
   margin-top: 30px;
 }
+@media (max-width: 894px) {
+  .box {
+    width: 100%;
+  }
+  #myUl {
+    width: 100%;
+  }
+}
+@media (max-width: 487px) {
+  h1 img {
+    display: none;
+  }
+}
