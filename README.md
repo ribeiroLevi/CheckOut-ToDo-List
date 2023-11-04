@@ -9,7 +9,7 @@ Aplicação minimalista de lista de afazeres para pessoas que não querem um mil
 - Exclusão de tasks
 - Check de tasks
 - Temas dark e light
-- Multiplataforma (Em construção)
+- Multiplataforma
 - Edição de tasks
 
 ## Documentação de cores
